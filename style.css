@@ -1,0 +1,62 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.content{
+
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.grid{
+    justify-content: center;
+    align-content: center;
+
+display: grid;
+grid-template-columns: 30% 30% 30%;
+grid-template-rows: 20% 20% 20%;
+
+
+}
+a{
+background-color: black;
+color: aliceblue;
+padding: 1%;
+
+display: inline-block;
+justify-content: center;
+border-radius: 10%;
+}
+
+ .karthik:hover + .grid{
+
+
+grid-gap: 20px;
+    padding: 20px;
+ }
+ .karthik{
+background-color: aqua;
+    padding: 2%;
+display: inline-block;
+margin: 1%;
+border-radius: 10%;
+ }
+ .footer{
+margin: 2%;
+background-color: rgb(115, 124, 121);
+padding: 7%;
+align-content: center;
+justify-content: center;
+ }
+ .footer div{
+
+    margin-left: 45%;
+ }
+ @media screen and (min-width:300px) and (max-width:500px){
+    .grid{
+flex-direction: column;
+display: flex;
+
+    }
+ }
